@@ -49,7 +49,7 @@ drop_database()
 create_database() 
 
 {
-    LOG_GENERATE "CREATE NEW DATABASE CEGONHA D-1"
+    LOG_GENERATE "CREATE NEW DATABASE  "$DB" D-1"
 
         # CREATE DATABASE WITH DEFAULT FILES TO LOGIN
         mysql --defaults-file=~/.my.cnf -e 'create database "$DB" '
